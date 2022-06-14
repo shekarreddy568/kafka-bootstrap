@@ -1,5 +1,4 @@
 import com.typesafe.scalalogging.LazyLogging
-import io.confluent.kafka.serializers.{AbstractKafkaSchemaSerDeConfig}
 import org.apache.kafka.connect.json.JsonDeserializer
 import org.apache.kafka.clients.CommonClientConfigs
 import org.apache.kafka.clients.admin.AdminClientConfig
