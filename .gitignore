@@ -1,0 +1,31 @@
+# sbt
+project/target/
+project/project/
+target/
+build/
+dist/
+ensime.sbt
+.ensime
+.ensime_cache/
+.bsp/
+
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+.idea/*
+
+# mac
+.DS_Store
+
+# other
+.history
+.scala_dependencies
+.cache
+.cache-main
+/.settings
+
+#general
+*.class

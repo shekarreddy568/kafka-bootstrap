@@ -1,0 +1,8 @@
+
+ARG CP_VERSION=7.1.1
+ARG BASE_PREFIX=confluentinc
+ARG CONNECT_IMAGE=cp-kafka-connect-base
+
+FROM $BASE_PREFIX/$CONNECT_IMAGE:$CP_VERSION
+
+RUN confluent-hub install --no-prompt confluentinc/kafka-connect-datagen:0.5.3
