@@ -9,13 +9,13 @@ import MinioUtils._
 import java.io.{BufferedWriter, FileWriter}
 import java.time.Duration
 
-object AvroConsumer extends LazyLogging {
+object Consumer extends LazyLogging {
 
   def main(args: Array[String]): Unit = {
 
-    if(args.length < 4) {
-      logger.error("Please pass all the required parameters (bootstrapServers, userName, password)")
-      throw new Exception("Please pass all the required parameters (bootstrapServers, userName, password)")
+    if(args.length < 8) {
+      logger.error("Please pass all the required parameters")
+      throw new Exception("Please pass all the required parameters")
     }
     logger.info("starting consumer application.......")
 
